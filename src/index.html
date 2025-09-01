@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaleTrack</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">SaleTrack: Відслідковуй свої продажі та прибутки!</h1>
+    </header>
+    <main class="main">
+        <section class="settings">
+            <h1 class="settings-title">Вибери свою діаграму:</h1>
+            <select name="typeOfChart" id="typeOfChart">
+                <option value="bar">Стовпчаста діаграма</option>
+                <option value="line">Лінійна діаграма</option>
+                <option value="radar">Радарна діаграма</option>
+                <option value="doughnut">Пончикова діаграма</option>
+                <option value="polarArea">Полярна діаграма</option>
+                <option value="bubble">Бульбашкова діаграма</option>
+                <option value="pie">Кругова діаграма</option>
+                <option value="scatter">Точкова діаграма</option>
+            </select>
+            <div class="bar">
+                <p class="bar-title">Напишіть назву вашої діаграми.</p>
+                <input type="text" class="bar-name" placeholder="Напишіть назву вашої діаграми.">
+                <p class="bar-subtitle">Напишіть назви категорій через кому. Напр.: Січень, Лютий, Березень"</p>
+                <input type="text" class="bar-labels" placeholder="Напишіть назви категорій через кому.">
+                <p class="bar-ttitle">Введіть підписи для графіка через кому. Напр.: 12, 13, 15</p>
+                <input type="text" class="bar" placeholder="Введіть підписи для графіка.">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
