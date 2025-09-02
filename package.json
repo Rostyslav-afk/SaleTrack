@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.0"
   }
 }

@@ -1,0 +1,225 @@
+/* mediascreen */
+
+@media screen and (min-width: 752px) {}
+
+@media screen and (min-width: 1264px) {}
+
+/* settings */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background: linear-gradient(200deg, hsla(0, 0%, 100%, 1) 37%, hsla(221, 97%, 54%, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+/* header */
+
+.header {
+    padding-top: 10px;
+    text-align: center;
+    z-index: 2;
+
+    @media screen and (min-width: 752px) {
+        padding-top: 25px;
+    }
+
+    .header-title {
+        font-family: "Didact Gothic";
+        font-size: 23px;
+        font-weight: 600;
+
+        @media screen and (min-width: 752px) {
+            font-size: 33px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            font-size: 45px;
+        }
+    }
+}
+
+/* settings */
+
+.settings {
+    padding-top: 60px;
+    z-index: 2;
+    text-align: center;
+
+    @media screen and (min-width: 752px) {
+        padding-top: 80px;
+    }
+
+    .settings-title {
+        font-size: 20px;
+        font-family: "Noto Sans";
+        margin-bottom:  30px;
+
+        @media screen and (min-width: 752px) {
+           font-size: 30px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            font-size: 42px;
+        }
+    }
+
+    .settings-select{
+        margin: 0 auto;
+        background-color: #fff;
+        border: 2px solid #000;
+        border-radius: 5px;
+        width: 450px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        #typeOfChart{
+             padding-top: 5px;
+             padding-bottom: 5px;
+             padding-right: 10px;
+             padding-left: 10px;
+             font-family: "Noto Sans";
+             margin-bottom: 10px;
+             border: 1px solid #000;
+             border-radius: 5px;
+        }
+    }
+
+    .bar{
+
+        .bar-title{
+
+        }
+    }
+}

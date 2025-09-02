@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaleTrack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -13,27 +22,34 @@
     </header>
     <main class="main">
         <section class="settings">
-            <h1 class="settings-title">Вибери свою діаграму:</h1>
-            <select name="typeOfChart" id="typeOfChart">
-                <option value="bar">Стовпчаста діаграма</option>
-                <option value="line">Лінійна діаграма</option>
-                <option value="radar">Радарна діаграма</option>
-                <option value="doughnut">Пончикова діаграма</option>
-                <option value="polarArea">Полярна діаграма</option>
-                <option value="bubble">Бульбашкова діаграма</option>
-                <option value="pie">Кругова діаграма</option>
-                <option value="scatter">Точкова діаграма</option>
-            </select>
-            <div class="bar">
-                <p class="bar-title">Напишіть назву вашої діаграми.</p>
-                <input type="text" class="bar-name" placeholder="Напишіть назву вашої діаграми.">
-                <p class="bar-subtitle">Напишіть назви категорій через кому. Напр.: Січень, Лютий, Березень"</p>
-                <input type="text" class="bar-labels" placeholder="Напишіть назви категорій через кому.">
-                <p class="bar-ttitle">Введіть підписи для графіка через кому. Напр.: 12, 13, 15</p>
-                <input type="text" class="bar" placeholder="Введіть підписи для графіка.">
+            <h1 class="settings-title">Вибери тип діаграми:</h1>
+            <div class="settings-select">
+                <select name="typeOfChart" id="typeOfChart">
+                    <option value="bar" style="padding: 5px;">Стовпчаста діаграма</option>
+                    <option value="line">Лінійна діаграма</option>
+                    <option value="radar">Радарна діаграма</option>
+                    <option value="doughnut">Пончикова діаграма</option>
+                    <option value="polarArea">Полярна діаграма</option>
+                    <option value="bubble">Бульбашкова діаграма</option>
+                    <option value="pie">Кругова діаграма</option>
+                    <option value="scatter">Точкова діаграма</option>
+                </select>
+
+                <div class="bar">
+                    <p class="bar-title">Напишіть назву вашої діаграми.</p>
+                    <input type="text" class="bar-name" placeholder="Напишіть назву вашої діаграми.">
+                    <p class="bar-subtitle">Напишіть назви категорій через кому. Напр.: Січень, Лютий, Березень"</p>
+                    <input type="text" class="bar-labels" placeholder="Напишіть назви категорій через кому.">
+                    <p class="bar-ttitle">Введіть підписи для графіка через кому. Напр.: 12, 13, 15</p>
+                    <input type="text" class="bar" placeholder="Введіть підписи для графіка.">
+                </div>
             </div>
         </section>
+        <section class="chart">
+            <canvas id="chart"></canvas>
+        </section>
     </main>
+    <script type="module" src="./app.js"></script>
 </body>
 
 </html>
